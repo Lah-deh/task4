@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header-container {
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1em 2em;
+   color:black
+}
+.nav {
+    padding-right: 2em;
+
+}
+ul {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+   
+}
+a {
+    text-decoration: none;
+}
+.hero {
+  background: url(./image/Image\ \(1\).png);
+  background-size: cover;
+  background-position: center;
+  height: 767px;
+  position: relative;
+}
+
+
+.her {
+    position: absolute;
+    background-color: #FFF;
+    top: 6rem;
+    border-radius: 0 60px 60px 0;
+    left: 0;
+    max-width:325px ;
+    max-height: 280px;
+    padding: 3em 4em;
+}
+.her h1 {
+margin-bottom: 1em;
+}
+.future {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1280px;
+    margin: 4em auto;
+    gap: 0;
+}
+.future-pics {
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    padding-left: 40px;
+}
+.future-text {
+    background-color: #F2F0F2;
+    border-radius: 0 60px 60px 0;
+    padding-left: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 60px 60px 0;
+    display: flex;
+}
+.textt {
+    max-width: 80%;
+    margin: 0 auto;
+
+   
+}
+.textt h1 {
+    margin-bottom: 1em;
+}
+
+.feature-text {
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.con {
+    font-size: 40px;
+}
+.calender {
+    border-radius: 10px;
+    background-color: #E2F1E8;
+    padding-left: 30px;
+    padding-top: 30px
+}
+    
+
+.sof {
+    font-size: 40px;
+   
+
+}
+.sofa {
+    border-radius: 10px;
+    background-color: #E2F1E8;
+    padding-left: 30px;
+    padding-top: 30p;
+}
+    
+
+.wif {
+    font-size: 40px;
+}
+.wifi {
+    border-radius: 10px;
+    background-color: #E2F1E8;
+    padding-left: 30px;
+    padding-top: 30px;
+    
+}
+.sms {
+    font-size: 40px;
+}
+.message {
+    border-radius: 10px;
+    background-color: #E2F1E8;
+    padding-left: 30px;
+    padding-top: 30px;
+    
+}
+
+@media (width:768px) {
+    .future {
+        flex-direction: column;
+    }
+    .future-text {
+        width: 83%;
+        text-align: center;
+        margin-left: 30px;
+        border-radius: 40px 0 0 40px;
+        padding-top: 30px;
+        margin-top: 30px;
+    }
+    .icons {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+}
+
+@media (width:425px) {
+    .future {
+        flex-direction: column;
+    }
+    .future-pics {
+        max-width: 50%;
+    }
+    .future-text {
+        width: 90%;
+        margin-left: 40px;
+        border-radius: 10px 0 0 10px;
+    }
+    .icon {
+        gap: 40px;
+    }
+}
