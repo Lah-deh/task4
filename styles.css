@@ -30,6 +30,8 @@ a {
   background-position: center;
   height: 767px;
   position: relative;
+  background-repeat: no-repeat;
+    
 }
 
 
@@ -47,15 +49,14 @@ a {
 margin-bottom: 1em;
 }
 .future {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     width: 1280px;
     margin: 4em auto;
     gap: 0;
 }
 .future-pics {
     display: grid;
-    grid-template-columns:1fr 1fr ;
+    grid-template-columns: 20rem 20rem;
     padding-left: 40px;
 }
 .future-text {
@@ -105,6 +106,7 @@ margin-bottom: 1em;
     padding-top: 40px;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding-bottom: 20px;
     
 }
 
@@ -153,39 +155,50 @@ margin-bottom: 1em;
     padding-top: 30px;
     
 }
-
 @media (width:768px) {
+    .hero {
+        background-size: contain;
+        background-position: top center;
+        text-align: start;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
     .future {
         flex-direction: column;
     }
+
+    .future-pics {
+        margin-top: -13rem;
+    }
+    .picss {
+        grid-column: 2;
+        grid-row: 1 ;
+        border-radius: 0 60px 60px 0;
+    }
+    .piccs {
+        grid-column:1 ;
+        grid-row:2 ;
+    }
     .future-text {
-        width: 83%;
+        width: 41.5rem;
+        border-radius: 60px 60px 60px 60px;
+        margin-left: 40px;
+        height: 10rem;
         text-align: center;
-        margin-left: 30px;
-        border-radius: 40px 0 0 40px;
-        padding-top: 30px;
-        margin-top: 30px;
+
+    }
+    .feature-text {
+        margin-top: -7rem;
     }
     .icons {
-        flex-direction: column;
-        gap: 20px;
+        display: grid;
+        grid-template-columns: 10rem 10rem 10rem 10rem;
+        width: 30rem;
+        grid-gap: 30px;
+        padding-left: 15px;
     }
-    
-}
 
-@media (width:425px) {
-    .future {
-        flex-direction: column;
-    }
-    .future-pics {
-        max-width: 50%;
-    }
-    .future-text {
-        width: 90%;
-        margin-left: 40px;
-        border-radius: 10px 0 0 10px;
-    }
-    .icon {
-        gap: 40px;
-    }
+
 }
