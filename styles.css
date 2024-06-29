@@ -200,5 +200,31 @@ margin-bottom: 1em;
         padding-left: 15px;
     }
 
+/* mobile screen of 480px by 767px */
+}
+@media (max-width: 480px) {
+   .future {
+    flex-direction: column;
+   }
+   .future-text {
+    width:30rem;
+    height: 20rem;
+   }
+   .future-pics {
+    transform: scale(0.7);
+    margin-left: -15rem;
+    margin-top: -3rem;
+   }
+   .icons {
+    flex-direction: column;
+    gap: 2rem;
+   }
+   .feature-text h1 {
+    width: 30rem;
+   }
+   .feature-text p {
+    width: 70rem ;
+   }
 
+    
 }
