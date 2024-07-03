@@ -172,10 +172,9 @@ line-height: 60px;
 
 }  
 
-@media (max-width:425px) {
+@media (width:480px) {
     .container {
         max-width: 100%;
-        border: 5px solid red;
     }
     .hero {
         max-width: 100%;
@@ -194,6 +193,7 @@ line-height: 60px;
     }
     .future-text {
         border-radius: 0;
+        margin-top: 30px;
     }
     .future-pics {
         width: 20rem;
