@@ -172,7 +172,7 @@ line-height: 60px;
 
 }  
 
-@media (width:480px) {
+@media (max-width:430px) {
     .container {
         max-width: 100%;
     }
