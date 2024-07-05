@@ -29,6 +29,9 @@ a {
     color: black;
 
 }
+.menu {
+    display: none;
+}
 .hero {
   background: url(./image/Image\ \(1\).png);
   background-size: cover;
@@ -36,7 +39,7 @@ a {
   height: 767px;
   position: relative;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 100vw;
   top: 83%;
   margin-top: 1em;
     
@@ -149,6 +152,9 @@ line-height: 60px;
 }
 
 @media (width:768px) {
+    .menu {
+        display: none;
+    }
     .hero {
         background-position: center;
     }    
@@ -181,6 +187,12 @@ line-height: 60px;
     .container {
         max-width: 100%;
         border: 2px solid red;
+    }
+    .nav {
+        display: none;
+    }
+    .menu {
+        display: block;
     }
     .hero {
         max-width: 100%;
